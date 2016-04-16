@@ -1,3 +1,5 @@
 = java demo
 
 a couple of java demo applications
+
+* servletdemo - a Servlet3.1 demo
