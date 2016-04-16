@@ -1,0 +1,17 @@
+group 'com.redmark.demo'
+version '1.0-SNAPSHOT'
+
+apply from: "$rootDir/gradle/config.gradle"
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    providedCompile libs.servlet
+    testCompile libs.junit
+}
