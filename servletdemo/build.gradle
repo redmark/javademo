@@ -1,7 +1,6 @@
 group 'com.redmark.demo'
 version '1.0-SNAPSHOT'
 
-apply from: "$rootDir/gradle/config.gradle"
 apply plugin: 'java'
 apply plugin: 'war'
 
@@ -12,6 +11,5 @@ repositories {
 }
 
 dependencies {
-    providedCompile libs.servlet
-    testCompile libs.junit
+    providedCompile 'org.apache.tomcat:tomcat-servlet-api:8.0.32'
 }
