@@ -1,0 +1,13 @@
+= validation demo
+
+jsr 303  validation demo , with  hibernate implementation.
+
+== use specified locale
+
+the default behavior is to use vm default locale. I want a specified one.
+
+* ValidationDemo.class focus on how to use a specified locale to get constraint violation message. MyInterpolator is the key
+* MyInterpolator.class delegate to org.hibernate.validator.internal.engine.ConfigurationImpl which
+ is default implementation of javax.validation.MessageInterpolator.
+
+
