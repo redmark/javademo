@@ -1,7 +1,6 @@
 group 'com.redmark.demo'
 version '1.0-SNAPSHOT'
 
-apply from: "$rootDir/../config.gradle"
 apply plugin: 'java'
 
 sourceCompatibility = 1.8
