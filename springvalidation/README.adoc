@@ -1,0 +1,22 @@
+= Demo spring mvc  validation
+
+
+
+== Servlet
+
+ two methods to use servlet
+
+* AnnotationServlet use @WebServlet("/AnnotationServlet")
+* NormalServlet is loaded  and mapped in container when DemoServletContainerInitializer is executing, mapping to "/NormalServlet"
+
+== Container
+
+ initialize container when server is starting
+
+*  DemoServletContainerInitializer and AppInit
+** the class must extends  javax.servlet.ServletContainerInitializer
+** must add a  META-INF/services/javax.servlet.ServletContainerInitializer file which contains a qualified DemoServletContainerInitializer name
+** Without @handlesTypes, the  DemoServletContainerInitializer.onStartup(Set<Class<?>> c, ServletContext ctx)  c parameter is null
+** with  @handlesTypes, a set Class which implements AppInit will be set  in c parameter +
+it is strange , why not use something like @ContainerInitializer to replace META-INF/services/javax.servlet.ServletContainerInitializer an @handlesTypes
+

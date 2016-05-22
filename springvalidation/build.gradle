@@ -1,0 +1,18 @@
+group 'com.redmark.demo'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework:spring-webmvc:4.2.5.RELEASE'
+    compile 'org.hibernate:hibernate-validator:5.2.4.Final'
+    compile 'com.google.code.gson:gson:2.6.2'
+    providedCompile 'org.apache.tomcat:tomcat-servlet-api:8.0.32'
+}
