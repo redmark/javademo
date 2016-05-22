@@ -1,0 +1,20 @@
+= Demo polymorphism
+
+demo of java polymorphism
+
+== static (compile ) polymorphism
+
+see printMe method of B and E
+
+== dynamic polymorphism
+
+see a set of printIt methods of com.redmark.javademo.poly.orgin.Printer
+
+== variant static polymorphism
+
+see com.redmark.javademo.poly.sugguest.Printer. it is not suggested , but in some abnormal case , it is useful
+
+* link:http://stackoverflow.com/questions/37346709/[stackoverflow question]
+
+
+
